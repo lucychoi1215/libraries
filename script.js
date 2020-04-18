@@ -34,16 +34,23 @@ window.addEventListener('mousemove', function(event) {
 })(jQuery);
 
 ///
+$('.grid').masonry({
+  // options
+  itemSelector: '.grid-item',
+  columnWidth: 200
+});
 
-// prefixed
+///
 
-const instance = Bricks({
-  packed: 'data-packed'
-})
-
-// unprefixed
-
-const instance = Bricks({
-  // becomes: 'data-packed'
-  packed: 'packed'
-})
+// // prefixed
+//
+// const instance = Bricks({
+//   packed: 'data-packed'
+// })
+//
+// // unprefixed
+//
+// const instance = Bricks({
+//   // becomes: 'data-packed'
+//   packed: 'packed'
+// })
